@@ -99,29 +99,80 @@ print(totaltext)
 #else:
  #   print("kaldın")
 
-studentcount=44
-if studentcount>20:
-    print("derse devam")
+# studentcount=44
+# if studentcount>20:
+#     print("derse devam")
 
-vize=int(input("vize: "))
-final=int(input("final:"))
-ortalama =(vize*0.4)+(final *0.6)
-#final<40 kaldı , ort<50 kaldı, vize finalin 2 katıysa kaldı, diğerlerinde geçti
-if vize<40:
-    print("kaldı")
-elif vize==final*2:
-    print("kaldı")
-elif ortalama<50:
-    print("kaldı")
-else:
-    print("geçti")
+# vize=int(input("vize: "))
+# final=int(input("final:"))
+# ortalama =(vize*0.4)+(final *0.6)
+# #final<40 kaldı , ort<50 kaldı, vize finalin 2 katıysa kaldı, diğerlerinde geçti
+# if vize<40:
+#     print("kaldı")
+# elif vize==final*2:
+#     print("kaldı")
+# elif ortalama<50:
+#     print("kaldı")
+# else:
+#     print("geçti")
 
-#or and - true false 
-if final<40 or ortalama<50 or vize==final*2:
-    print("kaldı")
-else:
-    print("geçti")
-    #deneme
+# #or and - true false 
+# if final<40 or ortalama<50 or vize==final*2:
+#     print("kaldı")
+# else:
+#     print("geçti")
+#     #deneme
+
+# sayi=[]
+# for i in range(3):
+#     sayi.append(int(input(f"{i+1}.sayı:")))
+# sayi.sort() #sort küçükten büyüğe sıralıyor eğer içine reverse=true dersek tam tersi sıralar
+# buyuk=int(input("kaçıncı: "))
+# print(sayi[buyuk-1])
+# for i in range(0,forRange+1,2):
+#     print(i)
+
+# rmin=int(input("alt:"))
+# rmax=int(input("üst:"))
+# for i in range(rmin,rmax):
+#     if i%2==0:
+#         print(i)
+#karar yapıları end ctrl ö yorum yada 3 tırnak
+
+#döngüler start
+for i in range(0,10):
+    print(i)
+ogranci=["v","s","z","i","ü"]
+#length
+print(len(ogranci))
+
+for i in range(len(ogranci)):
+    #if i>3:
+     #   break #looptan çıkıyor
+    if i==3:
+        pass #ilgili alanın bodysini boş bırakıyor.
+    print(f"{i+1}.Öğrenci: {ogranci[i]}")
+for i in range(0,10):
+    pass
+
+for i in ogranci:
+    if i=="v":
+        continue #o değeri atlayıp diğer değerleri yazıyor.
+    print(f"öğrenci: {i}")
+#yada
+for i in ogranci:
+    print(f"Öğrenci: {i}")
+
+#while boolean
+# while True:
+#     print("merhaba") #sonsuz döngü ctrl c terminal durdurur.
+i=0
+while i<10:
+      i=i+1
+      if i==3:
+          break
+      print("merhaba")
+    
 
 
-#karar yapıları end
+#döngüler end
