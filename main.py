@@ -171,8 +171,46 @@ while i<10:
       i=i+1
       if i==3:
           break
-      print("merhaba")
+      print(f"while içindeki i değeri: {i}")
+#döngüler end
+#fonksiyonlar start
+def ortalamaHesapla() -> None:
+    final=100
+    vize=100
+    ort=(vize*0.4)+(final*0.6)
+    print(ort)
+def ortalamahesaplavedondur(vize:float, final:float) -> float: #geriye float dönecek diyoruz.
+    return (vize*0.4)+(final*0.6)
+    
+#geriye döndürmek
+ortalamaHesapla()
+benimort2= ortalamaHesapla() #none değeri
+print(ortalamahesaplavedondur(70,100))
+print(benimort2)
+#triggerlamak, çalıştırmak, execute etmek
+#fonksiyonlar end
+#class ,nesne, obje start
+class Human:
+    #property, attribute => özellik, nitelik
+    name=""
+    age=20
+
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+        print("yapici blok çalişti")
     
 
+    #davranışlar
+    def talk(self, message):
+        print(f"{self.name}: {message}")
 
-#döngüler end
+    def walk(self):
+        print(f"{self.name} is walking..")
+
+human1=Human()#constructor => yapıcı blok
+human1.name="İlayda"
+human1.age=25
+human1.talk("merhaba")
+human1.walk()
+#class end
